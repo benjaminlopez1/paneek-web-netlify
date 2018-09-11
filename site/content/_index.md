@@ -1,5 +1,5 @@
 ---
-title: BAD coffee with a conscience
+title: BAD coffee with a cualquier cosa
 subtitle: Support sustainable farming while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:
