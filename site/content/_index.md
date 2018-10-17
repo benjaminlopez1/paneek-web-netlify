@@ -1,41 +1,19 @@
 ---
-title: BAD coffee with a cualquier cosa
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
-blurb:
-  heading: Why Kaldi?
-  text: >-
-    OOQIA is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
-intro:
-  heading: What we offer
-  text: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
-products:
-  - image: img/illustrations-coffee.svg
-    text: >-
-      We sell green and roasted coffee beans that are sourced directly from
-      independent farmers and farm cooperatives. We’re proud to offer a variety
-      of coffee beans grown with great care for the environment and local
-      communities. Check our post or contact us directly for current
-      availability.
-  - image: /img/illustrations-coffee-gear.svg
-    text: >-
-      We offer a small, but carefully curated selection of brewing gear and
-      tools for every taste and experience level. No matter if you roast your
-      own beans or just bought your first french press, you’ll find a gadget to
-      fall in love with in our shop.
+title: Create 360° virtual tours of any place
+subtitle: In minutes without programming skills
+image: /img/bg-header.jpg
+button: Click here to free start
 values:
-  heading: Our values
-  text: >-
-    Coffee is an amazing part of human culture but it has a dark side too – one
-    of colonialism and mindless abuse of natural resources and human lives. We
-    want to turn this around and return the coffee trade to the drink’s
-    exhilarating, empowering and unifying nature.
+  heading: What is Paneek?
+  text1: >-
+    Is an online service that allow you upload your own 360 images and use them to create fascinating 360° virtual tour.
+  text2: >-
+    No installation required, is easy like share a link.
+  text3: >-
+    Cheaper than hire a professional photographer or programmer.
+  text4: >-
+    You can add photos, videos, sounds, links and text.
+  text5: >-
+    Share your 360° virtual tours in any web or social network.
 ---
 

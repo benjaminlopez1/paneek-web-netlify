@@ -39,6 +39,7 @@
     "gulp-util": "^3.0.7",
     "imports-loader": "^0.8.0",
     "netlify-cms": "^2.0.9",
+    "netlify-cms-lib-auth": "^2.0.4",
     "postcss-cssnext": "^3.0.0",
     "postcss-import": "^12.0.0",
     "postcss-loader": "^3.0.0",
@@ -46,13 +47,30 @@
     "react": "16.4.2",
     "uncss": "^0.16.0",
     "url-loader": "^1.0.0",
-    "webpack": "^3.0.0",
+    "webpack": "^3.12.0",
     "whatwg-fetch": "^2.0.0"
   },
   "devDependencies": {
+    "@material/button": "^0.40.1",
+    "@material/card": "^0.40.1",
+    "@material/drawer": "^0.40.1",
+    "@material/icon-button": "^0.40.1",
+    "@material/image-list": "^0.40.1",
+    "@material/layout-grid": "^0.40.1",
+    "@material/ripple": "^0.40.1",
+    "@material/tab-bar": "^0.40.1",
+    "@material/toolbar": "^0.40.1",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
-    "svg-sprite-loader": "^3.0.0"
+    "material-components-web": "^0.40.1",
+    "node-sass": "^4.9.4",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^3.0.0",
+    "webpack-dev-server": "^2.11.3"
   }
 }

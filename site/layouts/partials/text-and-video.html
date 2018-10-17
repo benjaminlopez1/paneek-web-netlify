@@ -1,0 +1,30 @@
+<div class="row mt-70 mb-70">
+	<div class="col-7 text-center">
+		<iframe class="video" src="https://www.youtube.com/embed/WsPW1BTDc7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+	<div class="col-5 pt-20 pb-20">
+		<h1 class="sub-title">
+			{{.heading}}
+		</h1>
+		<h3  style="font-weight: 100">			
+			{{.text1}}
+		</h3>
+		<h3  style="font-weight: 100">
+			{{if .text2 }}
+			{{ .text2 }}<br><br>
+			{{ end }}
+
+			{{if .text3 }}
+			{{ .text3 }}<br><br>
+			{{ end }}
+
+			{{if .text4 }}
+			{{ .text4 }}<br><br>
+			{{ end }}
+
+			{{if .text5 }}
+			{{ .text5 }}
+			{{ end }}
+		</h3>
+	</div>
+</div>
