@@ -2,89 +2,12 @@
 <html lang="en">
   {{ partial "head" . }}
   <body>
-  	<aside class="mdc-drawer mdc-drawer--modal">
-		<div class="mdc-drawer__content">
-		  <nav class="mdc-list">
-		    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
-		      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-		      <span class="mdc-list-item__text">Home</span>
-		    </a>
-		    <a class="mdc-list-item" href="#">
-		      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">desktop_windows</i>
-		      <span class="mdc-list-item__text">Examples</span>
-		    </a>
-		    <a class="mdc-list-item" href="#">
-		      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">ballot</i>
-		      <span class="mdc-list-item__text">FAQ</span>
-		    </a>
-		   	<a class="mdc-list-item" href="#">
-		      <i class="material-icons mdc-list-item__graphic" aria-hidden="true">meeting_room</i>
-		      <span class="mdc-list-item__text">Login/Register</span>
-		    </a>
-		  </nav>
-		</div>
-	</aside>
+  	{{ partial "aside" . }}
 	<div class="mdc-drawer-scrim"></div>
   	<div style="width: 100%;" id="main-content"> 
-		<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
-		  <div class="mdc-top-app-bar__row">
-		    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-		      <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
-		      <span class="mdc-top-app-bar__title">Pannek</span>
-		    </section>
-		    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-				<div class="mdc-tab-bar" role="tablist">
-					<div class="mdc-tab-scroller">
-						<div class="mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-area--scroll" style="margin-bottom: 0px;">
-							<div class="mdc-tab-scroller__scroll-content">
-								<button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
-									<span class="mdc-tab__content">
-										<span class="mdc-tab__text-label">Home</span>
-									</span>
-									<span class="mdc-tab-indicator mdc-tab-indicator--active">
-										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
-									</span>
-									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:150px; --mdc-ripple-fg-scale:1.7736; --mdc-ripple-fg-translate-start:63px, -36.8125px; --mdc-ripple-fg-translate-end:50.75px, -51px;"></span>
-								</button>
-								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-									<span class="mdc-tab__content">
-										<span class="mdc-tab__text-label">Examples</span>
-									</span>
-									<span class="mdc-tab-indicator">
-										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
-									</span>
-									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:190px; --mdc-ripple-fg-scale:1.74162; --mdc-ripple-fg-translate-start:21.5px, -62.8125px; --mdc-ripple-fg-translate-end:63.6484px, -71px;">
-									</span>
-								</button>
-								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-									<span class="mdc-tab__content">
-										<span class="mdc-tab__text-label">FAQ</span>
-									</span>
-									<span class="mdc-tab-indicator">
-										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
-									</span>
-									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:169px; --mdc-ripple-fg-scale:1.75892; --mdc-ripple-fg-translate-start:116.703px, -67.3125px; --mdc-ripple-fg-translate-end:57.1094px, -60.5px;">
-									</span>
-								</button>
-								<button class="mdc-tab" role="tab" aria-selected="false" tabindex="-1">
-									<span class="mdc-tab__content">
-										<span class="mdc-tab__text-label">Login/Register</span>
-									</span>
-									<span class="mdc-tab-indicator">
-										<span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline" style=""></span>
-									</span>
-									<span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:169px; --mdc-ripple-fg-scale:1.75892; --mdc-ripple-fg-translate-start:116.703px, -67.3125px; --mdc-ripple-fg-translate-end:57.1094px, -60.5px;">
-									</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-		    </section>
-		  </div>
-		</header>
-    {{ block "main" . }}{{ end }} 
-    {{ partial "footer" . }}
+  		{{ partial "navbar" . }}
+    	{{ block "main" . }}{{ end }} 
+    	{{ partial "footer" . }}
     </div>
   </body>
 </html>
