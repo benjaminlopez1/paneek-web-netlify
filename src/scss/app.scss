@@ -127,3 +127,45 @@
 	padding-left:10px;
 	padding-right:10px;
 }
+
+img {
+	opacity: 1;
+	transition: opacity 0.3s;
+}
+
+img[data-src] {
+	opacity: 0;
+}
+
+@media only screen and (max-width: 600px){
+	#mdc_navbar{
+		display:none;
+	}
+	.title{
+		font-size:40px;
+		font-weight: 500;
+	}
+	.sub-title{
+		font-size:30px;
+		font-weight: 100;
+	}
+	.my-masonry-image-list {
+  		@include mdc-image-list-masonry-columns(1);
+  		color:#f5f5f5;
+	}
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+	.title{
+		font-size:55px;
+		font-weight: 500;
+	}
+	.sub-title{
+		font-size:35px;
+		font-weight: 100;
+	}
+	.my-masonry-image-list {
+  		@include mdc-image-list-masonry-columns(2);
+  		color:#f5f5f5;
+	}
+}
