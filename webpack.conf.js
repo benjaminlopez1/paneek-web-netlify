@@ -78,7 +78,6 @@ export default {
     app: ["./js/app"],
     cms: ["./js/cms"],
     material: ["./js/material"],
-    lazy_load:["./js/lazy_load"],
     scss: ["./scss/app.scss"],
   },
   output: {
