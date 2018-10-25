@@ -1,12 +1,13 @@
 <div class="row pl-100 pr-100">
 	<div class="col-12">
 		<h1 class="sub-title text-center">
-			Pricing
+			{{ heading }}
 		</h1>
 		<h3 style="font-weight: 100" class="text-center">						
-			Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to <a href="mailto:info@paneek.net">info@paneek.net</a>.
+			{{ description }}
 		</h3>
 	</div>
+	{{ partial "pricing-columns" .Params.plans }}
 	<div class="col-3">
 		<div class="mdc-card text-center">
 			<div class="row__primary">

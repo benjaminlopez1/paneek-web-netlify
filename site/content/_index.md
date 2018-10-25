@@ -16,32 +16,49 @@ values:
   text5: >-
     Share your 360° virtual tours in any web or social network.
 pricing:
-  heading: Monthly subscriptions
+  heading: Pricing
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+    Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to <a href="mailto:info@paneek.net">info@paneek.net</a>.
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - plan: Free
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: '50'
-    - description: 'Great for avid drinkers, java-nsoving couples and bigger crowds'
+        - Published tours and panoramas may include small advertisements to cover our costs. You can turn off the ads anytime by using a paid account.
+        - Support for small business traffic.
+        - Some features are disabled
+        - Unlimited tours and panoramas
+      price: '$0'
+    - plan: 1 Month
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+        - "Unique payment" is for anyone that need all features for a period of time.
+        - Support for small business traffic
+        - No advertisements
+        - Online Support english and spanish.
+        - Additional features enabled.
+        - Unlimited tours and panoramas.
+        - 1 Gigabyte of space to upload custom icons and sounds.
+        - Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations.
+      price: '$10,99'
+    - plan: 3 Months
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '?'
+        - "Unique payment" is for anyone that need all features for a period of time.
+        - Support for small business traffic
+        - No advertisements
+        - Online Support english and spanish.
+        - Additional features enabled.
+        - Unlimited tours and panoramas.
+        - 1 Gigabyte of space to upload custom icons and sounds.
+        - Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations.
+      price: '$30,99'
+    - plan: 12 Months
+      items:
+        - "Unique payment" is for anyone that need all features for a period of time.
+        - No advertisements.
+        - Unlimited tours and panoramas.
+        - No limit of how many times your tours can be loaded.
+        - Online Support english and spanish.
+        - Additional features enabled.
+        - 1 Gigabyte of space to upload custom icons and sounds.
+        - Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations.
+      price: '$100,99'      
 ---
 
