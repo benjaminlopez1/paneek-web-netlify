@@ -69,5 +69,41 @@ var place_holder_click = function(){
     document.getElementById('video-player').remove()
   }
 }
-video_button.addEventListener('click', place_holder_click)
-place_holder.addEventListener('click', place_holder_click)
+if (video_button != null && place_holder != null){
+  video_button.addEventListener('click', place_holder_click)
+  place_holder.addEventListener('click', place_holder_click)
+}
+
+var path = window.location.pathname
+var tab_active =  document.querySelector('.mdc-tab--active')
+var as_tab_active = document.querySelector('.mdc-list-item--activated')
+
+if (tab_active.getAttribute('href') != path && as_tab_active.getAttribute('href') != path){
+  if (path == '/'){
+    var tab = document.getElementById('tab-index');
+    var as_tab = document.getElementById('as-tab-index');  
+  }
+  if (path == '/examples/'){
+    var tab = document.getElementById('tab-examples');
+    var as_tab = document.getElementById('as-tab-examples');
+  }
+  if (path == '/faq/'){
+    var tab = document.getElementById('tab-faq');
+    var as_tab = document.getElementById('as-tab-faq');
+  }
+  if (path == '/login/'){
+    var tab = document.getElementById('tab-sign-in');
+    var as_tab = document.getElementById('as-tab-sign-in');
+  }
+
+  tab_active.tabindex = -1;
+  tab.tabindex = 0;
+  removeClass(tab_active, 'mdc-tab--active');
+  removeClass(as_tab_active, 'mdc-list-item--activated');
+  var indicator = document.querySelector('.mdc-tab-indicator--active');
+  removeClass(indicator, 'mdc-tab-indicator--active');
+  addClass(tab, 'mdc-tab--active');
+  addClass(as_tab, 'mdc-list-item--activated');
+  addClass(tab.getElementsByClassName( 'mdc-tab-indicator' )[0], 'mdc-tab-indicator--active');
+}
+
