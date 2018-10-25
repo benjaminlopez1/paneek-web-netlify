@@ -1,10 +1,10 @@
 <div class="row pl-100 pr-100">
 	<div class="col-12">
 		<h1 class="sub-title text-center">
-			{{ heading }}
+			{{ .heading }}
 		</h1>
 		<h3 style="font-weight: 100" class="text-center">						
-			{{ description }}
+			{{ .description }}
 		</h3>
 	</div>
 	{{ partial "pricing-columns" .Params.plans }}

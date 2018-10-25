@@ -20,16 +20,16 @@ pricing:
   description: >-
     Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to <a href="mailto:info@paneek.net">info@paneek.net</a>.
   plans:
-    - plan: Free
+    - description: Free
       items:
         - Published tours and panoramas may include small advertisements to cover our costs. You can turn off the ads anytime by using a paid account.
         - Support for small business traffic.
         - Some features are disabled
         - Unlimited tours and panoramas
       price: '$0'
-    - plan: 1 Month
+    - description: 1 Month
       items:
-        - "Unique payment" is for anyone that need all features for a period of time.
+        - Unique payment is for anyone that need all features for a period of time.
         - Support for small business traffic
         - No advertisements
         - Online Support english and spanish.
@@ -38,9 +38,9 @@ pricing:
         - 1 Gigabyte of space to upload custom icons and sounds.
         - Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations.
       price: '$10,99'
-    - plan: 3 Months
+    - description: 3 Months
       items:
-        - "Unique payment" is for anyone that need all features for a period of time.
+        - Unique payment is for anyone that need all features for a period of time.
         - Support for small business traffic
         - No advertisements
         - Online Support english and spanish.
@@ -49,9 +49,9 @@ pricing:
         - 1 Gigabyte of space to upload custom icons and sounds.
         - Tours will use a fast hosting to deliver your 360 images at top speed to users in different geographic locations.
       price: '$30,99'
-    - plan: 12 Months
+    - description: 12 Months
       items:
-        - "Unique payment" is for anyone that need all features for a period of time.
+        - Unique payment is for anyone that need all features for a period of time.
         - No advertisements.
         - Unlimited tours and panoramas.
         - No limit of how many times your tours can be loaded.

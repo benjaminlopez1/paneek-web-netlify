@@ -2,22 +2,16 @@
 	<div class="col-3">
 		<div class="mdc-card text-center">
 			<div class="row__primary">
-				<h2 style="font-weight: 100">Free</h2>
-				<h1 class="title">$0</h1>
+				<h2 style="font-weight: 100">{{ .description }}</h2>
+				<h1 class="title">{{ .price }}</h1>
 			</div>
 			<div class="card-content">
-				<h5 style="font-weight: 100">
-					Published tours and panoramas may include small advertisements to cover our costs. You can turn off the ads anytime by using a paid account.
-				</h5>
-				<h5 style="font-weight: 100">
-					Support for small business traffic
-				</h5>
-				<h5 style="font-weight: 100">
-					Some features are disabled
-				</h5>
-				<h5 style="font-weight: 100">
-					Unlimited tours and panoramas
-				</h5>
+				{{ $itemCount := len .items }}
+				{{ range $index, $item := .items }}
+					<h5 style="font-weight: 100">
+						{{ $item }}
+					</h5>
+				{{ end }}
 			</div>
 		  <div class="mdc-card__actions text-center">
 		    <div class="mdc-card__action-buttons" style="margin-left: auto;margin-right: auto;">
