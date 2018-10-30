@@ -107,11 +107,12 @@ if (tab_active.getAttribute('href') != path && as_tab_active.getAttribute('href'
   addClass(tab.getElementsByClassName( 'mdc-tab-indicator' )[0], 'mdc-tab-indicator--active');
 }
 
-function scrollIt(element) {  
+function scrollIt(top) {  
+  console.log(top);
   window.scrollTo({
     'behavior': 'smooth',
     'left': 0,
-    'top': element.offsetTop
+    'top': top
   });
 }
 
@@ -123,6 +124,7 @@ btns.forEach(function(btn){
   btn.addEventListener('click', function(){
     var href = btn.getAttribute('href').split('#')[1];
     var section = document.getElementById(href);
-    scrollIt(section);
+    var top = section.offsetTop - 100;
+    scrollIt(parseInt(top));
   })
 })
