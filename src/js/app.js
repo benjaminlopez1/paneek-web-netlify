@@ -107,3 +107,22 @@ if (tab_active.getAttribute('href') != path && as_tab_active.getAttribute('href'
   addClass(tab.getElementsByClassName( 'mdc-tab-indicator' )[0], 'mdc-tab-indicator--active');
 }
 
+function scrollIt(element) {  
+  window.scrollTo({
+    'behavior': 'smooth',
+    'left': 0,
+    'top': element.offsetTop
+  });
+}
+
+
+const btns = document.querySelectorAll('.js-btn');
+const sections = document.querySelectorAll('.js-section');
+
+btns.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var href = btn.getAttribute('href').split('#')[1];
+    var section = document.getElementById(href);
+    scrollIt(section);
+  })
+})

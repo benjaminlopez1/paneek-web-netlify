@@ -24,6 +24,10 @@
   font-size:20px;
 }
 
+#my-list{
+  @include mdc-list-item-primary-text-ink-color(on-secondary);
+}
+
 .mdc-drawer-app-content {
   flex: auto;
   overflow: auto;

@@ -2,7 +2,7 @@ import {MDCRipple} from '@material/ripple/index';
 import {MDCTopAppBar} from '@material/top-app-bar/index';
 import {MDCTabBar} from '@material/tab-bar';
 import {MDCDrawer} from "@material/drawer";
-
+import {MDCList} from "@material/list";
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
 const topAppBar = new MDCTopAppBar(topAppBarElement);
@@ -17,3 +17,10 @@ topAppBar.listen('MDCTopAppBar:nav', () => {
 const tab = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+
+var listsEle = document.querySelectorAll('#my-list');
+
+listsEle.forEach(function(listEle){
+	var list = new MDCList(listEle);
+	list.singleSelection = true;
+})

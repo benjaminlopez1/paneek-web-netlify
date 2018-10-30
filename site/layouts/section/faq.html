@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+{{ partial "title" (dict "description" .Params.description "title" .Title "link" .Params.link "text_link" .Params.text_link) }}
+
+<div class="row">
+	<div class="col-4">
+		{{ partial "list" .Params.general }}
+	</div>
+	<div class="col-4">
+		{{ partial "list" .Params.tours }}
+	</div>
+	<div class="col-4">
+		{{ partial "list" .Params.sound }}
+		{{ partial "list" .Params.hostpot }}
+		{{ partial "list" .Params.panorama }}
+		{{ partial "list" .Params.minimap }}
+		{{ partial "list" .Params.image }}
+	</div>
+</div>
+<div class="row js-section" id="whatispaneek">
+</div>
+
+{{ end }}

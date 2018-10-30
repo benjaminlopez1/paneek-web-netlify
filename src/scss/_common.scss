@@ -437,7 +437,7 @@ a:active {
 	.ml-sm-200{margin-left:200px !important;}
 }
 // Medium devices (tablets, 768px and up)
-@media (max-width: 768px) { 
+@media (min-width: 768px) { 
 	.pt-md-10{padding-top:10px !important;}
 	.pt-md-20{padding-top:20px !important;}
 	.pt-md-30{padding-top:30px !important;}

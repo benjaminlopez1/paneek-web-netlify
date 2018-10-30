@@ -1,0 +1,8 @@
+<ul id="my-list" class="mdc-list" aria-orientation="vertical">
+	<h3>{{ .title }}</h3>
+	{{ range .elements }}
+	<li class="mdc-list-item mdc-ripple-upgraded" tabindex="0">
+    	<a href="{{ .link }}" class="mdc-list-item__text js-btn">{{ .text }}</a>
+  	</li>
+	{{ end }}
+</ul>
