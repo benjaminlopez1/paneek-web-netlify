@@ -113,7 +113,7 @@ content:
   - title: What is paneek ?
     id: whatispaneek
     answer: >-
-      Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.
+      Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.<a href="">hola</a>
   - title: I have uploaded a 360 image but nothing happened
     id: uploadnothinghappen
     answer: >-
@@ -185,7 +185,7 @@ content:
   - title: How use the arrows destinations in your tours ?
     id: arrowdestinations
     answer: >-
-      You have available 8 directions for each panorama in your tour. These directions are in degrees, each arrow represent a direction.  Directions are represented in : 0,45,90,135,180,225,270,315 degrees in total sum 360°. You can choose any you like.  At the right side of each arrow, you have a list of alls the panoramas available in your tour. You just need to select the panorama that you want to load when the user click on that arrow. Automatically the preview is updated and you can click on the arrows to test them. (Be be careful if the option "navigation mode" is set to "only List", you won't be able to see the arrow in your map)  Important: Do not forget add arrows to go back to the previous panorama, or your visitor will be stuck.  This Navigation mode is know like "Arrows" remember that you also have the "List" mode. But you can not have both in the same time.  Each panorama will be loaded in the same point of view (position) that was saved. So if you want that a panorama will be loaded in one particular direction of your image, you should go to that panorama, go to the edit and drag the panorama pointing out where you want and save it.
+      You have available 8 directions for each panorama in your tour.\n These directions are in degrees, each arrow represent a direction.  Directions are represented in : 0,45,90,135,180,225,270,315 degrees in total sum 360°. You can choose any you like.  At the right side of each arrow, you have a list of alls the panoramas available in your tour. You just need to select the panorama that you want to load when the user click on that arrow. Automatically the preview is updated and you can click on the arrows to test them. (Be be careful if the option "navigation mode" is set to "only List", you won't be able to see the arrow in your map)  Important: Do not forget add arrows to go back to the previous panorama, or your visitor will be stuck.  This Navigation mode is know like "Arrows" remember that you also have the "List" mode. But you can not have both in the same time.  Each panorama will be loaded in the same point of view (position) that was saved. So if you want that a panorama will be loaded in one particular direction of your image, you should go to that panorama, go to the edit and drag the panorama pointing out where you want and save it.
   - title: What is developer options ?
     id: developeroptions
     answer: >-
@@ -221,108 +221,96 @@ content:
     id: usehostpotnavigation
     answer: >-
       In this mode you can use hotspots to load locations, is goood for virtual tours that do not have a simple orientation. Please see this video. Color and custom icons are only available for paid accounts.
-  - id: '#dontopeninfooption'
+  - id: dontopeninfooption
     title: What is "Don't open the information at the start" option ?
     answer: >-
       With this option, you can avoid open the information window at the start of your virtual tour or panorama. (only paid accounts)
-  - id: '#externallinkoption'
+  - id: externallinkoption
     title: What is "open tour on External link" option ?
     answer: >-
       This option is only useful if you have inserted your tour on your website. Users can use this button to open the tour in another tab.
-  - id: '#removegoogle'
+  - id: removegoogle
     title: Can I remove the logo of Google ?
     answer: >-
       Sorry, not allowed under Google Maps/Google Earth Terms of Service. "Section 10.1.1 (b) No Hiding of Identity. You must not hide or mask from Google the identity of your Maps API Implementation as it uses the Service, including by failing to follow the identification conventions listed in the Maps APIs Documentation." Even CNN, and NBC Nightly News have to have the Google logo displayed at all times.
-  - id: '#vrontours'
+  - id: vrontours
     title: Can I use virtual reality (VR) Headset on tours ?
     answer: >-
       Tours on paneek are virtual tours(First generation), this mean that you can not use VR headset or cardboard. There are 3 types of virtual tours.  Tour VR: These are virtual tour that use witj the headset VR.  Tour AR: These are of this type, see the video  Virtual Tour (First generation): Are the tour that use paneek and you need use the mouse to navigate.  For the moment paneek not support VR headset however, it's a great idea! In fact, we already have this in our development pipeline as it was suggested before as well. In the meantime, you can see what we're currently working on in our product roadmap
-  - id: '#downloadtour'
+  - id: downloadtour
     title: Can I download my virtual tour ?
     answer: >-
       Not for the moment, we have this feature in our list of things to do.
-  - id: '#backgroundsound'
+  - id: backgroundsound
     title: What is Background Sound ?
     answer: >-
       Is a sound that you can add in your tours and panoramas. You have 3 options:  Mp3 files: Panoramas will have at the bottom tiny controls of audio. This is the best option to use.  youtube videos: Panoramas will have a mini video, this is a little annoying but if you do not mind you can use it.  Each individual panorama can has a background sound and every time a panorama is loaded, the sound will be downloaded and play it. This mean that if you add lots of sounds your users will be downloading all these files and the tour could be slow. Be careful with this.  If a tour and panorama ave a background in the same time. The tour sound will be played.
-  - id: '#whyminivideo'
+  - id: whyminivideo
     title: Why is there a mini video on my tour and panorama ?
     answer: >-
       If you are using a youtube video like background sound this is mandatory according to the Youtube API Terms of services and we can not do nothing about it.  GOOGLE: [Prohibited] separate, isolate, or modify the audio or video components of any YouTube audiovisual content made available through the YouTube API;  If you do not want this minivideo, please use a mp3 file url.
-  - id: '#notreponmobile'
+  - id: notreponmobile
     title: On mobile devices, my sound is not reproduce, Why ?
     answer: >-
       Sadly, on mobile devices Background sound is not working correctly. We are working hard in order to fix it.  Additionally autoplay cannot be done on iOS devices (iPhone, iPad, iPod touch) and Android, because of the high amout of traffic you can use on mobile networks for your visitor. Visitor need to press the play button, is a business decision of these companies.
-  - id: '#descperhostpot'
+  - id: descperhostpot
     title: Could you give a description of each hotspot ?
     answer: >-
-      Hotspot Text
-      Useful for long text. You can use the editor to add imagenes too.
-
-      Hotspot Link
-      You can add one unique link or several links. Each link will open in an new tab in your browser.
-
-      Hotspot Image
-      Open a gallery of images. All web images format are supported. You need the link of the image
-      Hotspot Video
-      Open a gallery of video. Only youtube and vimeo links are supported
-
-      Hotspot Embed
-      This type is for users that have knowledge in programming websites. You can put html code in this hotspot.
-
-      Hotspot Twitter
-      You can insert the timeline of your twitter account. You only need the ID of a timeline widget to be rendered. Please check this link to know how get this id. Programming knowledge is needed.
-
-      Hotspot Facebook
-      You can insert the timeline of your facebook account. You only need the url of your facebook Page. Please check this link to know how to create the widget link.  Programming knowledge is needed.
-
-      Hotspot Catalogue
-      Useful to create Gallery of items. Each item can have a link , a price , an image and title. See the video
-
-      Hotspot Search Engine
-      You can setup this hotspot to open a search web engine to search anything you want. After a user click on this hotspot a new tab is opened in the browser and automatically will show to the user the results of the seach. Ex:
-
-      If you have a panorama inside a museum, you can add a hotspot to open google and automatically show all relevant information for a piece of art or videos in youtube.
-
-      Hotspot Placeholder
-      if you only want to locate an icon in a place without interaction, this hotspot is for you. Placeholder is just an icon without nothing more.
-
-      Hotspot Tiny content
-      Show a short text or a small image. Images should have a Height of 220px Max for images
-
-      Hotspot Card
-      You have 4 different templates to use. Is a mini content that will appear in your your tour. See the video
-
-      Hotspot Sound
-      You can add a mp3 url sound that it will be reproduce after click on the hotspot.
-  - id: '#audioguidesync'
+      + Hotspot Text
+        - Useful for long text. You can use the editor to add imagenes too.
+      + Hotspot Link 
+        - You can add one unique link or several links. Each link will open in an new tab in your browser.
+      + Hotspot Image
+        - Open a gallery of images. All web images format are supported. You need the link of the image
+      + Hotspot Video
+        - Open a gallery of video. Only youtube and vimeo links are supported
+      + Hotspot Embed
+        - This type is for users that have knowledge in programming websites. You can put html code in this hotspot.
+      + Hotspot Twitter
+        - You can insert the timeline of your twitter account. You only need the ID of a timeline widget to be rendered. Please check this link to know how get this id. Programming knowledge is needed.
+      + Hotspot Facebook
+        - You can insert the timeline of your facebook account. You only need the url of your facebook Page. Please check this link to know how to create the widget link.  Programming knowledge is needed.
+      + Hotspot Catalogue
+        - Useful to create Gallery of items. Each item can have a link , a price , an image and title. See the video
+      + Hotspot Search Engine
+        - You can setup this hotspot to open a search web engine to search anything you want. After a user click on this hotspot a new tab is opened in the browser and automatically will show to the user the results of the seach. Ex:
+        -If you have a panorama inside a museum, you can add a hotspot to open google and automatically show all relevant information for a piece of art or videos in youtube.
+      + Hotspot Placeholder
+        - if you only want to locate an icon in a place without interaction, this hotspot is for you. Placeholder is just an icon without nothing more.
+      + Hotspot Tiny content
+        - Show a short text or a small image. Images should have a Height of 220px Max for images
+      + Hotspot Card
+        - You have 4 different templates to use. Is a mini content that will appear in your your tour. See the video
+      + Hotspot Sound
+        - You can add a mp3 url sound that it will be reproduce after click on the hotspot.
+  - id: audioguidesync
     title: What is Audio guide synchronization?
     answer: >-
       You can move the panorama according to one audio file. With this you can create tutorials and voice instructions. If you are using media library you do not have to worry about CORS    
-  - id: '#panimportfromgoogle'
+  - id: panimportfromgoogle
     title: After a period of time a panorama imported from google is located in other place ?
     answer: >-
       Panorama imported from Google could change of location after a period of time. This is because Google maps is constantly updating the panorama and locations. To solve this you need edit the panorama and import it again to get the new location.
-  - id: '#whatismaporeditor'
+  - id: whatismaporeditor
     title: What is Map of routes editor ?
     answer: >-
       By default, all routes on the mini map have a distance of 1 unit. This may cause that the routes look strange because all have the same distance. In this editor, you can change the distance for each route with the correct.
 
       You just need to click on each line on the map or click in the items list at your right side.
-  - id: '#whatisdistance'
+  - id: whatisdistance
     title: What is "distance" on the Map of routes editor ?
     answer: >-
       By default, all routes on the mini map have a distance of 1 unit. This unit can be anything you want: meters, km, miles, etc.
       you can update this distance with any value you want. The important part here is that you need to decide what metric system to use and keep it in all the routes.
-  - id: '#whatis360pan'
+  - id: whatis360pan
     title: What is a 360 panorama image ?
     answer: >-
       Panoramic Photography is capturing images on a wider format, so as to include much more than what eyes can see naturally from a point. To capture a panoramic image, one needs a wider aspect ratio so that there is a view which is unobstructed of a vaster area. Examples
-  - id: '#createmy360pan'
+  - id: createmy360pan
     title: How can I create my own 360 panorama images ?
     answer: >-
       Check this post in our blog
-  - id: '#whatmobilecreate360'
+  - id: whatmobilecreate360
     title: What mobile phones models can create 360 images ?    
     answer: >-
       You have to search a phone with a sensor called "gyroscope" Only these devices can produce good quality images.

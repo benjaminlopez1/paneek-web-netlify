@@ -18,7 +18,7 @@ values:
 pricing:
   heading: Pricing
   description: >-
-    Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to <a href="mailto:info@paneek.net">info@paneek.net</a>.
+    Paneek is free. you can start to create virtual tours now and when you feel ready to promote your tours, you can chosee any of our plans .If you have questions about them send us an email to <info@paneek.net>.
   plans:
     - description: Free
       items:

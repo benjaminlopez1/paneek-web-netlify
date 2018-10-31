@@ -2,8 +2,8 @@
 {{ range .elements }}
 	<li class="mdc-image-list__item">
 		<img class="mdc-image-list__image lazy" src="https://dummyimage.com/250/cbcdce/cbcdce" data-src="{{ .image }}" alt="I'm an image!">
-		<div class="mdc-image-list__supporting">
-		  <span class="mdc-image-list__label">{{ .text }}</span>
+		<div class="mdc-image-list__supporting text-center">
+		  <span class="mdc-image-list__label" style="margin-left: auto;margin-right: auto;">{{ .text }}</span>
 		</div>
 	</li>
 {{ end }}
