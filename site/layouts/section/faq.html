@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "title" (dict "description" .Params.description "title" .Title "link" .Params.link "text_link" .Params.text_link) }}
+{{ partial "title" (dict "title" .Title) }}
 
 <div class="row">
 	<div class="col-4">
@@ -15,11 +15,19 @@
 		{{ partial "list" .Params.panorama }}
 		{{ partial "list" .Params.minimap }}
 		{{ partial "list" .Params.image }}
+	</div>	
+	<div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10 text-center">
+		<h3 class="pr-30 pl-30 pr-lg-100 pl-lg-100 pb-lg-70" style="font-weight: 100">
+    		{{ .Params.description }}
+        	{{ if ( .Params.link ) ( .Params.text_link ) }}
+    			<a href="{{ .Params.link }}" target="blank">{{ .Params.text_link }}</a>
+    		{{ end }}
+		</h3>
 	</div>
 </div>
 {{ range .Params.content }}
 <div class="row js-section" id="{{ .id }}">
-	<div class="col-12 pr-100 pl-100 pr-sm-10 pr-sm-10">
+	<div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
 		<h1 class="sub-title text-center">{{ .title }}</h1>
 		<p style="font-weight: 100" class="text-center">{{ .answer }}</p>
 	</div>

@@ -1,5 +1,5 @@
 ---
-title: Some questions? See here.
+title: Frequently asked questions
 description: >-
   We have a cool article with a lot tips & trick that you can use.
 link: https://paneek.blogspot.com/2017/03/tips-tricks-for-virtual-tours-at-paneek.html
