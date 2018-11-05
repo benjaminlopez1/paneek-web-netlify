@@ -113,7 +113,7 @@ content:
   - title: What is paneek ?
     id: whatispaneek
     answer: >-
-      Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.<a href="">hola</a>
+      Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.
   - title: I have uploaded a 360 image but nothing happened
     id: uploadnothinghappen
     answer: >-
@@ -315,3 +315,10 @@ content:
     answer: >-
       You have to search a phone with a sensor called "gyroscope" Only these devices can produce good quality images.
 ---
+
+<div class="row js-section" id="What is paneek ?">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">What is paneek ?</h1>
+    <p style="font-weight: 100" class="text-center">Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.</p>
+  </div>
+</div>
