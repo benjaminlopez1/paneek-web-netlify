@@ -110,26 +110,6 @@ image:
     - link: '#whatmobilecreate360'
       text: What mobile phones models can create 360 images ?
 content:
-  - title: What is paneek ?
-    id: whatispaneek
-    answer: >-
-      Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.
-  - title: I have uploaded a 360 image but nothing happened
-    id: uploadnothinghappen
-    answer: >-
-      When you upload an image, this image need to be processed in our server first. The process take a few minutes after this we send you an email with the notification. Sometimes the email could not appear in your inbox for many reasons. In case you should come back to paneek and check if the panorama was created. In case that you noticed that the panorama is not created after 15 minutes or more, please send us a message reporting the problem.
-  - title: I have Paid a subscription with paypal but nothing happened
-    id: paypalnothinghappen
-    answer: >-
-      We will send you an email in the next 20 minutes with the confirmation. Normal support hours are 9 AM to 9 PM Eastern time. Our goal is to respond to your inquiry within 1 business day. If you never received the email please contact us via email.
-  - title: Can I cancel my subscriptions ?
-    id: cancancel
-    answer: >-
-      In paneek we do not have subscriptions, you only paid once. After that period of time, your account go back to normal.
-  - title: If I cancel my subscriptions what happen with all my content ?
-    id: cancelwithcontent
-    answer: >-
-      Your content will be still available but it will be Limited of how many times your tours can be loaded. (According our judgement)
   - title: What is the compatibility with browsers and mobile devices ?
     id: responsivecompatibility
     answer: >-
@@ -316,9 +296,81 @@ content:
       You have to search a phone with a sensor called "gyroscope" Only these devices can produce good quality images.
 ---
 
-<div class="row js-section" id="What is paneek ?">
+<div class="row js-section" id="whatispaneek">
   <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
     <h1 class="sub-title text-center">What is paneek ?</h1>
     <p style="font-weight: 100" class="text-center">Paneek is an interactive media platform that will help you to create more engaging tours by adding rich media like links,photos,videos,product catalogs and more. Use Paneek to create interactive tours using the Google Maps street view technology in minutes!. You only need upload a panoramic image.</p>
+  </div>
+</div>
+<div class="row js-section" id="uploadnothinghappen">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">I have uploaded a 360 image but nothing happened</h1>
+    <p style="font-weight: 100" class="text-center"> When you upload an image, this image need to be processed in our server first. The process take a few minutes after this we send you an email with the notification. Sometimes the email could not appear in your inbox for many reasons. In case you should come back to paneek and check if the panorama was created. In case that you noticed that the panorama is not created after 15 minutes or more, please send us a message reporting the problem.</p>
+  </div>
+</div>
+<div class="row js-section" id="paypalnothinghappen">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">I have Paid a subscription with paypal but nothing happened</h1>
+    <p style="font-weight: 100" class="text-center"> We will send you an email in the next 20 minutes with the confirmation. Normal support hours are 9 AM to 9 PM Eastern time. Our goal is to respond to your inquiry within 1 business day. If you never received the email please contact us via email.</p>
+  </div>
+</div>
+<div class="row js-section" id="cancancel">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">Can I cancel my subscriptions ?</h1>
+    <p style="font-weight: 100" class="text-center"> In paneek we do not have subscriptions, you only paid once. After that period of time, your account go back to normal.</p>
+  </div>
+</div>
+<div class="row js-section" id="cancelwithcontent">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">If I cancel my subscriptions what happen with all my content ?</h1>
+    <p style="font-weight: 100" class="text-center">Your content will be still available but it will be Limited of how many times your tours can be loaded. (According our judgement)</p>
+  </div>
+</div>
+<div class="row js-section" id="responsivecompatibility">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">What is the compatibility with browsers and mobile devices ?</h1>
+    <p style="font-weight: 100" class="text-center">
+      - Google chrome desktop 100%<br>
+      - Google chrome mobile 100%<br>
+      - Mozilla firefox desktop 70%<br>
+      - Safari desktop 60%<br>
+      - Safari mobile iphone 60%<br>
+      - Iphone and ipads 60%<br>
+    </p>
+  </div>
+</div>
+<div class="row js-section" id="includedinpaid">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">What is included in the paid account ?</h1>
+    <p style="font-weight: 100" class="text-center"> 
+      - Online support: If you have problem in the process of creating your tours we can help you. (english and spanish)<br>
+      - All advertisements are removed<br>
+      - In the period of time of you paid account, your tours can be loaded unlimited of times<br>
+      - Add background sound in your tours is enabled<br>
+    </p>
+  </div>
+</div>
+<div class="row js-section" id="nadirlogo">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">What is Nadir Logo ?</h1>
+    <p style="font-weight: 100" class="text-center"> 
+      Is a logo that will be place at the bottom of your tour or panorama. More info about <a href="https://en.wikipedia.org/wiki/Zenith" target="_blank">Nadir</a>.<br>
+      Be careful only works perfect in browsers that support spherical projection like Google Chrome desktop and others. So test it in all the browsers of your target audience
+</p>
+  </div>
+</div>
+<div class="row js-section" id="carefulwithcnp">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">Why you should be careful with copy and paste text in the editor ?</h1>
+    <p style="font-weight: 100" class="text-center"> 
+      You can copy and paste text from any place but when you do this, you are copying all the style of the text that include: font , color , margin , font-size, etc.<br>
+      <a href="//paneek.blogspot.com/2017/03/tips-tricks-for-virtual-tours-at-paneek.html" target="_blank">Additionally check our tips</a>
+    </p>
+  </div>
+</div>
+<div class="row js-section" id="onlyurl">
+  <div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10">
+    <h1 class="sub-title text-center">Why does paneek only use url for images and icons ?</h1>
+    <p style="font-weight: 100" class="text-center">We avoid this additional cost and we can offer a free plan for users.</p>
   </div>
 </div>
