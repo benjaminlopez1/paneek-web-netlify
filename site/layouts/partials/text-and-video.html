@@ -10,25 +10,24 @@
 		<h1 class="sub-title">
 			{{.heading}}
 		</h1>
-		<h3  style="font-weight: 100">			
-			{{.text1}}
+		<h3 style="font-weight: 100">
+			{{ .text1 }}
 		</h3>
-		<h3  style="font-weight: 100">
-			{{if .text2 }}
-			{{ .text2 }}<br><br>
-			{{ end }}
-
-			{{if .text3 }}
-			{{ .text3 }}<br><br>
-			{{ end }}
-
-			{{if .text4 }}
-			{{ .text4 }}<br><br>
-			{{ end }}
-
-			{{if .text5 }}
-			{{ .text5 }}
-			{{ end }}
+		<h3 style="font-weight: 100">
+		<ul>
+			<li>
+			{{ .text2 }}	
+			</li>
+			<li>
+			{{ .text3 }}	
+			</li>
+			<li>
+			{{ .text4 }}
+			</li>
+			<li>
+			{{ .text5 }}	
+			</li>
+		</ul>
 		</h3>
 	</div>
 </div>
