@@ -128,3 +128,14 @@ btns.forEach(function(btn){
     scrollIt(parseInt(top));
   })
 })
+
+const slide_buttons = document.querySelectorAll('.slide');
+const forms = document.querySelectorAll('.login-forms');
+
+slide_buttons.forEach( function(btn){
+  btn.addEventListener('click', function(){
+      forms.forEach(function(form){
+        form.classList.toggle('hide');
+      })
+  })
+})

@@ -11,6 +11,47 @@
 @import "@material/card/mdc-card";
 @import "@material/ripple/mixins";
 @import "@material/icon-button/mdc-icon-button";
+@import "@material/textfield/mdc-text-field";
+
+
+.username,
+.password,
+.register-username,
+.register-email,
+.register-password,
+.register-repassword {
+  &:not(.mdc-text-field--invalid) {
+    @include mdc-text-field-label-color(primary);
+  }
+  &.mdc-text-field--focused:not(.mdc-text-field--invalid)  {
+    @include mdc-text-field-label-color(primary);
+  }&.mdc-text-field:not(.mdc-text-field--disabled) {
+   @include mdc-text-field-label-color(primary)
+  };
+
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.mdc-text-field:not(.mdc-text-field--disabled) {
+    background-color: #fff !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  margin: auto;
+}
+
+.button-container button {
+  margin: 3px;
+}
+
+.cancel {
+  @include mdc-button-ink-color(on-secondary);
+}
 
 .mdc-top-app-bar {
 	@include mdc-top-app-bar-fill-color(secondary);
@@ -19,10 +60,18 @@
 
 .foo-button {
   @include mdc-button-ink-color(on-secondary);
+  @include mdc-states(on-secondary);
+  font-size:20px;
+  background-color: transparent;
+}
+
+.jumbotron-button {
+  @include mdc-button-ink-color(on-secondary);
   @include mdc-button-container-fill-color(secondary);
   @include mdc-states(on-secondary);
   font-size:20px;
 }
+
 
 #my-list{
   @include mdc-list-item-primary-text-ink-color(on-secondary);
@@ -239,4 +288,14 @@ $video-height: 50vh;
   left: 0;
   position: absolute;
   display: block;
+}
+
+
+.login-forms{
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.hide {
+  height: 0;
 }
