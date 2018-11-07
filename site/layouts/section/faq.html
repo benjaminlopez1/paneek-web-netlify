@@ -2,21 +2,19 @@
 
 {{ partial "title" (dict "title" .Title) }}
 
-<div class="row">
-	<div class="col-4">
+<div class="row pr-150 pl-150 pr-sm-10 pl-sm-10">
+	<div class="col-6">
 		{{ partial "list" .Params.general }}
-	</div>
-	<div class="col-4">
-		{{ partial "list" .Params.tours }}
-	</div>
-	<div class="col-4">
 		{{ partial "list" .Params.sound }}
+		{{ partial "list" .Params.minimap }}
+	</div>
+	<div class="col-6">
+		{{ partial "list" .Params.tours }}
 		{{ partial "list" .Params.hostpot }}
 		{{ partial "list" .Params.panorama }}
-		{{ partial "list" .Params.minimap }}
 		{{ partial "list" .Params.image }}
-	</div>	
-	<div class="col-12 pr-100 pl-100 pr-sm-10 pl-sm-10 text-center">
+	</div>
+	<div class="col-12 text-center">
 		<h3 class="pr-30 pl-30 pr-lg-100 pl-lg-100 pb-lg-70" style="font-weight: 100">
     		{{ .Params.description }}
         	{{ if ( .Params.link ) ( .Params.text_link ) }}
@@ -25,7 +23,7 @@
 		</h3>
 	</div>
 </div>
-{{ .Content }}
+{{ partial "answer_faq" }}
 
 <div class="row pl-150 pr-150 text-center">
 {{ partial "social_networks" }}

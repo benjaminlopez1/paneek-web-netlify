@@ -2,7 +2,8 @@
 title: Create 360° virtual tours of any place
 subtitle: In minutes without programming skills
 image: /img/bg-header.jpg
-button: Click here to free start
+button: Click to start, it's free!
+button_link: /login/
 values:
   heading: What is Paneek?
   text1: >-

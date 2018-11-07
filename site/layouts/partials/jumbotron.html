@@ -4,10 +4,10 @@
     {{ if .subtitle }}
     <h1 class="sub-title pr-20 pl-20">{{.subtitle}}</h1>
     {{ end }}
-    {{ if .button }}
-    <button class="mdc-button mdc-button--raised mb-150 mr-10 ml-10 jumbotron-button">
+    {{ if (.button) (.button_link) }}
+    <a type="button" href="/login/" class="mdc-button mdc-button--raised mb-150 mr-10 ml-10 jumbotron-button">
       {{ .button }}
-    </button>
+    </a>
     {{ end }}
   </div>
 </div>
