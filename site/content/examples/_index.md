@@ -6,13 +6,13 @@ description: >-
   Enjoy our example tours and know what you can do with us.
 examples:
   elements:
-    - image: https://s3-us-west-2.amazonaws.com/saulbpano/resources/no_image.jpg
+    - image: /img/examples/lokanta_me_encanta.jpg
       text: LOKANTA ME ENCANTA
       link: https://www.paneek.net/#/tour/view/4511
     - image: https://s3-us-west-2.amazonaws.com/saulbpano/panoramas/6187/30496/panoThumb.jpg
       text: Patagonia Run 2018
       link: https://www.paneek.net/#/tour/view/4305
-    - image: https://s3-us-west-2.amazonaws.com/saulbpano/resources/no_image.jpg
+    - image: /img/examples/marina_copan.jpg
       text: Marina Copán, Conventions Center
       link: https://www.paneek.net/#/tour/view/4080 
     - image: https://d23u3ye4jogzr9.cloudfront.net/medialibrary/5491/image/uid-153036429336068.jpg
@@ -36,7 +36,7 @@ examples:
     - image: https://d23u3ye4jogzr9.cloudfront.net/medialibrary/3366/image/uid-152286234878690.jpg
       text: Jardín Botánico Cosmovitral
       link: https://www.paneek.net/#/tour/view/2785
-    - image: https://s3-us-west-2.amazonaws.com/saulbpano/resources/no_image.jpg
+    - image: /img/examples/crosby_boat.jpeg
       text: Crosby Boat station
       link: https://www.paneek.net/#/tour/view/2754
     - image: https://d23u3ye4jogzr9.cloudfront.net/medialibrary/882/image/uid-152213018658334.jpg
