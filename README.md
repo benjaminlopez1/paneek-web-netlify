@@ -1,4 +1,4 @@
-# Victor Hugo
+# PANEEK WITH HUGO 
 
 **A Hugo boilerplate for creating truly epic websites**
 
