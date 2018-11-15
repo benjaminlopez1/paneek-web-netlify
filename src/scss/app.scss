@@ -440,3 +440,19 @@ border-radius: 0 0 8px 8px; }
       	transform: translateY(-50%) rotate(-180deg);
       	-webkit-transform: translateY(-50%) rotate(-180deg);
     }
+
+.mdc-top-app-bar__section__custom {
+    display: inline-flex;
+    flex: 0 1 auto;
+    align-items: center;
+    min-width: 0;
+    padding: 8px 12px;
+    z-index: 1;
+    width: 70px;
+    margin-left: auto;
+}
+
+.mdc-top-app-bar__section--align-center {
+    justify-content: center;
+    order: -1;
+}
