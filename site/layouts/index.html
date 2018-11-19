@@ -1,18 +1,18 @@
 {{ define "main" }}
 
 {{ partial "hero" }}
-{{ partial "feacture"}}
-{{ partial "feacture"}}
-{{ partial "feacture"}}
+{{ partial "feacture" .Params.feacture_one }}
+{{ partial "feacture" .Params.feacture_two }}
+{{ partial "feacture" .Params.feacture_three }}
 
-{{ partial "graphic" }}
+{{ partial "graphic" .Params.chart }}
 
-{{ partial "vp-1" }}
+{{ partial "vp-1" .Params.vp_one }}
 
 {{ partial "carousel" }}
 
 {{ partial "testimonies" }}
 
-{{ partial "vp-2" }}
+{{ partial "vp-2" .Params.vp_two }}
 
 {{end}}

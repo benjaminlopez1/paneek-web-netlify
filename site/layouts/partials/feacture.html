@@ -1,4 +1,4 @@
-<div class="row p-0 mt-10 mb-10">
+<div class="row pl-lg-50 mt-10 mb-10">
 	<div class="col-5">
 		<div class="video">
 	  		<img src="https://dummyimage.com/250/6ACEFF/6ACEFF" data-video="https://www.youtube.com/embed/WsPW1BTDc7c" title="Play Video" class="video__placeholder" />
@@ -6,21 +6,18 @@
 		</div>	
 	</div>
 	
-	<div class="col-7 pb-20 pb-md-10 pb-sm-10">
+	<div class="col-7 pt-10 pl-lg-50 pb-20 pb-md-10 pb-sm-10">
 		<h1 class="sub-title-2 text-sm-center" style="margin:0">
-			Lorem Ipsum
+			{{ .header }}
 		</h1>
 		<h3 style="font-weight: 100">
 		<ul>
+			{{ $itemCount := len .values }}
+			{{ range $index, $value := .values }}
 			<li class="mt-10">
-			Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
+			{{ $value }}
 			</li>
-			<li class="mt-10">
-			Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
-			</li>
-			<li class="mt-10">
-			Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
-			</li>
+			{{ end }}
 		</ul>
 		</h3>
 		<br>

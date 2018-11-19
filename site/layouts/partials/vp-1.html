@@ -2,20 +2,17 @@
 
   <div class="col-7 pt-20 pb-50">
     <h1 class="title text-sm-center">
-      Fast + Easy + Everyone
+      {{ .header }}
     </h1>
 
     <h3 style="font-weight: 100">
     <ul>
+      {{ $itemCount := len .values }}
+      {{ range $index, $value := .values }}
       <li class="mt-10">
-      Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
+      {{ $value }}
       </li>
-      <li class="mt-10">
-      Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
-      </li>
-      <li class="mt-10">
-      Lorem ipsum dolor sit amet consectetur, adipiscing elit vestibulum sociosqu.
-      </li>
+      {{ end }}
     </ul>
     </h3>
   </div>
