@@ -129,3 +129,30 @@ slide_buttons.forEach( function(btn){
       })
   })
 })
+
+var navbarCollapse = function() {
+  var nav_items = document.querySelectorAll('.mdc-tab__text-label');
+  var nav_underlines = document.querySelectorAll('.mdc-tab-indicator .mdc-tab-indicator__content--underline');
+  if (window.pageYOffset > 100) {
+      nav_items.forEach(function(item){
+        removeClass(item, "mdc-tab__text-label-white");
+      })
+      
+      nav_underlines.forEach(function(item){
+        removeClass(item, "mdc-tab-indicator__content--underline-white");
+      })
+
+      addClass(document.getElementById('mainNav'), "navbar-shrink");
+  } else {
+      removeClass(document.getElementById('mainNav'), "navbar-shrink");
+      nav_items.forEach(function(item){
+        addClass(item, "mdc-tab__text-label-white");
+      })
+      nav_underlines.forEach(function(item){
+        addClass(item, "mdc-tab-indicator__content--underline-white");
+      })
+      
+  }
+};
+
+window.addEventListener("scroll", navbarCollapse);

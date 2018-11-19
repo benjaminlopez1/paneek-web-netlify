@@ -54,9 +54,62 @@
 }
 
 .mdc-top-app-bar {
-	@include mdc-top-app-bar-fill-color(background);
+	@include mdc-top-app-bar-fill-color(on-primary);
 	@include mdc-top-app-bar-icon-ink-color(primary);
 	@include mdc-top-app-bar-ink-color(primary);
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav {
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    color: white;
+    @include mdc-top-app-bar-icon-ink-color(on-primary);
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 1em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff !important;
+    color: $mdc-theme-on-surface;
+    @include mdc-top-app-bar-icon-ink-color(on-surface);
+  }
+
+  .mdc-tab-indicator > .mdc-tab-indicator__content--underline-white {
+    background-color: white !important;
+  }
+
+  .mdc-tab__text-label {
+    display: inline-block;
+    opacity: 1 !important;
+    line-height: 1;
+  }
+
+  .mdc-tab .mdc-tab__text-label-white {
+    color: white !important;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+    padding: 12px 10px;
+  }
+
+  .mdc-tab {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+    #mainNav.navbar-shrink .mdc-tab {
+    font-size: 1em;
+  }
 }
 
 .foo-button {
@@ -68,8 +121,8 @@
 
 .jumbotron-button {
   @include mdc-button-ink-color(on-secondary);
-  @include mdc-button-container-fill-color(primary);
-  @include mdc-states(on-primary);
+  @include mdc-button-container-fill-color(secondary);
+  @include mdc-states(on-secondary);
   font-size:30px;
 }
 
@@ -178,13 +231,18 @@
 }
 
 .row__negative{
-	background-color:#4c4c4c;
-	color:#f5f5f5;
+	background-color: $mdc-theme-primary;
+	color: white;
 }
 
 .row__primary{
-	background-color: #6ab344;
+	background-color: $mdc-theme-primary;
 	color: #f5f5f5;
+}
+
+.row__secondary{
+  background-color: $mdc-theme-secondary;
+  color: #f5f5f5;
 }
 
 .row__purple{
@@ -203,7 +261,7 @@
 }
 
 .text-gray{
-	color:#757575;
+	color:$mdc-theme-background;
 }
 
 .my-masonry-image-list {
@@ -230,7 +288,7 @@ border-radius: 50%;
 }
 .testimonial-image-list .mdc-image-list__supporting {
 	justify-content: center !important;
-	color: #757575 !important;
+	color: $mdc-theme-background !important;
 }
 
 .mdc-image-list__label__reverse{
@@ -247,7 +305,7 @@ border-radius: 50%;
 
 .btn-vp{
 	font-size: 35px; 
-	margin-top: 30%;
+	margin-top: 23%;
   padding: 30px;
 }
 
@@ -306,6 +364,10 @@ border-radius: 50%;
 	font-size: 30px; 
 	margin-top: 0;
   padding: 30px;
+  }
+  .mdc-top-app-bar__section__custom {
+    padding: 8px 0px !important;
+    width: 90px !important;
   }
 }
 
@@ -373,7 +435,7 @@ $video-height: 40vh;
   left: 50%;
   position: absolute;
   display: block;
-  border: 3px solid #258dba;
+  border: 3px solid $mdc-theme-on-surface;
   border-radius: 50%;
   outline: none;
   cursor: pointer;
@@ -385,7 +447,7 @@ $video-height: 40vh;
     content: "";
     position: absolute;
     display: block;
-    background-color: #258dba;
+    background-color: $mdc-theme-on-surface;
     width: 35px;
     height: 3px;
     top: 50%;
@@ -412,11 +474,11 @@ $video-height: 40vh;
   &.is-playing:after { transform: translateY(0) rotate(-45deg); }
 }
 .video:hover .video__button {
-  border-color: #ffffff;
+  border-color: $mdc-theme-secondary;
   
   &:before,
   &:after {
-    background-color: #ffffff;
+    background-color: $mdc-theme-secondary;
   }
 }
 
@@ -445,6 +507,12 @@ $video-height: 40vh;
   @include mdc-states(primary);
 }
 
+.btn-secondary{
+  @include mdc-button-ink-color(on-secondary);
+  @include mdc-button-container-fill-color(secondary);
+  @include mdc-states(secondary);
+}
+
 .btn-reverse-primary{
 	@include mdc-button-ink-color(primary);
   	@include mdc-button-container-fill-color(on-primary);
@@ -470,13 +538,13 @@ border-radius: 0 0 8px 8px; }
 }
     .carousel-arrow.right {
       top: 45%;
-      right: 25px;
+      right: 35px;
       transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
     }
     .carousel-arrow.left {
-    	top: 60%;
-    	left: 20px;
+    	top: 55%;
+    	left: 30px;
       	transform: translateY(-50%) rotate(-180deg);
       	-webkit-transform: translateY(-50%) rotate(-180deg);
     }
