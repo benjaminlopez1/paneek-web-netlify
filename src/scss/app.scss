@@ -160,9 +160,8 @@
 }
 
 .title{
-	font-size:70px;
+	font-size:65px;
 	font-weight: 500;
-  letter-spacing: 5px;
 }
 
 .sub-title{
@@ -414,6 +413,10 @@ border-radius: 50%;
 		margin-top: 0;
     padding: 30px;
   	}
+
+  .d-md-none{
+    display: none;
+  }
 }
 
 $video-height: 40vh;
