@@ -165,7 +165,7 @@
   }
 
   .carousel-arrow.left {
-    top: 75% !important;
+    top: 70% !important;
     left: 40px !important;
     transform: translateY(-50%) rotate(-180deg);
     -webkit-transform: translateY(-50%) rotate(-180deg);
@@ -297,7 +297,7 @@ border-radius: 50%;
 
 @media only screen and (max-width: 600px){
   .header{
-    height: 65vh;
+    height: auto;
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: right;
