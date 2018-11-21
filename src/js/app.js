@@ -133,6 +133,7 @@ slide_buttons.forEach( function(btn){
 var navbarCollapse = function() {
   var nav_items = document.querySelectorAll('.mdc-tab__text-label');
   var nav_underlines = document.querySelectorAll('.mdc-tab-indicator .mdc-tab-indicator__content--underline');
+  console.log(window.pageYOffset);
   if (window.pageYOffset > 100) {
       nav_items.forEach(function(item){
         removeClass(item, "mdc-tab__text-label-white");

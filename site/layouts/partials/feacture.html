@@ -1,16 +1,16 @@
 <div class="row pl-lg-50 mt-10 mb-10">
 	<div class="col-5">
 		<div class="video">
-	  		<img src="https://dummyimage.com/250/6ACEFF/6ACEFF" data-video="https://www.youtube.com/embed/WsPW1BTDc7c" title="Play Video" class="video__placeholder" />
+	  		<img data-video="https://www.youtube.com/embed/WsPW1BTDc7c" class="video__placeholder" />
 	  		<button class="video__button"></button>
 		</div>	
 	</div>
 	
 	<div class="col-7 pt-20 pt-lg-30 pl-lg-50 pb-20 pb-md-10 pb-sm-10">
-		<h1 class="sub-title-2 text-sm-center" style="margin:0">
+		<h2 class="text-sm-center m-0">
 			{{ .header }}
-		</h1>
-		<h3 style="font-weight: 100">
+		</h2>
+		<h3>
 		<ul>
 			{{ $itemCount := len .values }}
 			{{ range $index, $value := .values }}
@@ -20,9 +20,8 @@
 			{{ end }}
 		</ul>
 		</h3>
-		<br>
 		<p class="text-sm-center">
-		<a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mb-sm-20 mb-md-50 mr-20 ml-20 feacture-button">
+		<a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mb-sm-20 mb-md-50 mr-20 ml-20 button f-20">
 	      	DEMO
 	    </a>
 	    </p>

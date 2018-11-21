@@ -1,7 +1,7 @@
-<div class="row pr-50 pl-50">
+<div class="row row__negative pr-50 pl-50">
 
   <div class="col-5 text-center d-sm-none">
-      <a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mr-20 ml-20 btn-secondary btn-vp">
+      <a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mr-20 ml-20 mt-p-lg-30 button f-30 p-20 mt-sm-0 mt-md-0">
           Start now
       </a>
   </div>
@@ -11,7 +11,7 @@
       {{ .header }}
     </h1>
 
-    <h3 style="font-weight: 100">
+    <h3>
     <ul>
       {{ $itemCount := len .values }}
       {{ range $index, $value := .values }}
@@ -24,7 +24,7 @@
   </div>
 
   <div class="col-5 text-center d-lg-none">
-      <a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mr-20 ml-20 btn-secondary btn-vp">
+      <a type="button" href="/login/" class="mdc-button mdc-button--raised mb-100 mr-20 ml-20 mt-p-lg-30 button f-30 p-20 mt-sm-0 mt-md-0">
           Start now
       </a>
   </div>
