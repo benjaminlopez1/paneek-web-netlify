@@ -37,6 +37,7 @@ $video-height: 40vh;
   margin-right: auto;
   width: 90%;
   background-color: $mdc-theme-primary;
+  border: 1px solid $mdc-theme-primary;
   border-radius: 5%;
 }
 .video__placeholder { width: 100%; height:100%; display: block; }
@@ -95,8 +96,7 @@ $video-height: 40vh;
     background-color: $mdc-theme-secondary;
   }
 }
-
-#video-player {
+[id*="video-player"]{
   width: 100%;
   height: $video-height;
   top: 0;

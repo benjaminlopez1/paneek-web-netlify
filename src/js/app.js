@@ -1,4 +1,22 @@
 // JS Goes here - ES6 supported
+function hasClass(el, className) {
+    return el.classList ? el.classList.contains(className) : new RegExp('\\b'+ className+'\\b').test(el.className);
+}
+
+function addClass(el, className) {
+    if (el.classList) el.classList.add(className);
+    else if (!hasClass(el, className)) el.className += ' ' + className;
+}
+
+function removeClass(el, className) {
+    if (el.classList) el.classList.remove(className);
+    else el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
+}
+
+function insertAfter(el, referenceNode) {
+    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
@@ -22,47 +40,26 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function hasClass(el, className) {
-    return el.classList ? el.classList.contains(className) : new RegExp('\\b'+ className+'\\b').test(el.className);
-}
+var video_button = document.querySelectorAll('.video__button');
 
-function addClass(el, className) {
-    if (el.classList) el.classList.add(className);
-    else if (!hasClass(el, className)) el.className += ' ' + className;
-}
-
-function removeClass(el, className) {
-    if (el.classList) el.classList.remove(className);
-    else el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
-}
-
-function insertAfter(el, referenceNode) {
-    referenceNode.parentNode.insertBefore(el, referenceNode.nextSibling);
-}
-
-
-var video_button = document.querySelector('.video__button');
-var place_holder = document.querySelector('.video__placeholder');
-
-var place_holder_click = function(){
-  if ( document.getElementById('video-player') == null ){
+video_button.forEach(function(vb, index){
+  vb.addEventListener('click', function(){
+    if ( document.getElementById('video-player'+(index+1)) == null ){
+    var place_holder = document.getElementById('video__placeholder'+(index+1))
     var video = document.createElement('iframe');
-    video.id = 'video-player';
+    video.id = 'video-player'+(index+1);
     video.src = place_holder.getAttribute('data-video');
     video.frameborder = 0;
     video.allowfullscreen = true;
     video.wmode = "opaque";
     insertAfter(video, place_holder);
-    addClass(video_button, 'is-playing');
+    addClass(vb, 'is-playing');
   }else{
-    removeClass(video_button, 'is-playing');
-    document.getElementById('video-player').remove()
+    removeClass(vb, 'is-playing');
+    document.getElementById('video-player'+(index+1)).remove()
   }
-}
-if (video_button != null && place_holder != null){
-  video_button.addEventListener('click', place_holder_click)
-  place_holder.addEventListener('click', place_holder_click)
-}
+  })
+})
 
 var path = window.location.pathname
 var tab_active =  document.querySelector('.mdc-tab--active')
@@ -98,7 +95,6 @@ if (tab_active.getAttribute('href') != path && as_tab_active.getAttribute('href'
 }
 
 function scrollIt(top) {  
-  console.log(top);
   window.scrollTo({
     'behavior': 'smooth',
     'left': 0,
@@ -133,7 +129,6 @@ slide_buttons.forEach( function(btn){
 var navbarCollapse = function() {
   var nav_items = document.querySelectorAll('.mdc-tab__text-label');
   var nav_underlines = document.querySelectorAll('.mdc-tab-indicator .mdc-tab-indicator__content--underline');
-  console.log(window.pageYOffset);
   if (window.pageYOffset > 100) {
       nav_items.forEach(function(item){
         removeClass(item, "mdc-tab__text-label-white");
@@ -156,4 +151,5 @@ var navbarCollapse = function() {
   }
 };
 
+navbarCollapse()
 window.addEventListener("scroll", navbarCollapse);

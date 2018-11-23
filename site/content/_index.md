@@ -5,18 +5,21 @@ image: /img/bg-header.jpg
 button: Click to start, it's free!
 button_link: /login/
 feacture_one:
+  index: 1
   header: Floor map
   values:
     - Add you house floor plan
     - Allow visitor see your environments
     - Use your own architectural images
 feacture_two:
+  index: 2
   header: Background Sound
   values:
     - Use your own sound files
     - Gallery sound free sound ready to use
     - Allow your visitor hear your world
 feacture_three:
+  index: 3
   header: Custom icons
   values:
     - Personalize your scene with default icons
